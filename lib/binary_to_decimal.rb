@@ -5,5 +5,28 @@
 # Calculate  and return the decimal value for this binary number using
 # the algorithm you devised in class.
 def binary_to_decimal(binary_array)
-  raise NotImplementedError
+  binary_array.length.time do |index|
+    result = 0
+    case index
+    when 0
+      value = binary_array[index] * 2**7
+    when 1
+      value = binary_array[index] * 2**6
+    when 2
+      value = binary_array[index] * 2**5
+    when 3
+      value = binary_array[index] * 2**4
+    when 4
+      value = binary_array[index] * 2**3
+    when 5
+      value = binary_array[index] * 2**2
+    when 6
+      value = binary_array[index] * 2**1
+    when 7
+      value = binary_array[index] * 2**0
+    else
+      #  do something
+      raise NotImplementedError
+    end
+    result += value
 end
