@@ -7,8 +7,6 @@
 def binary_to_decimal(binary_array)
   result = 0
   binary_array.length.times do |index|
-    # puts index
-    # puts binary_array[index]
     case index
     when 0
       value = binary_array[index] * 2**7
@@ -31,7 +29,6 @@ def binary_to_decimal(binary_array)
       raise NotImplementedError
     end
     result += value
-    # puts result
   end
   return result
 end
