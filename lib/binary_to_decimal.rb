@@ -33,7 +33,5 @@ def binary_to_decimal(binary_array)
     result += value
     # puts result
   end
+  return result
 end
-
-array = [ 0, 0, 0, 0, 1, 0, 0, 1 ]
-binary_to_decimal(array)
