@@ -27,8 +27,8 @@ describe "decimal to binary" do
   end
 
   it "From random decimal to binary" do
-    decimal = binary_array.join.to_s.to_i(2)
-    expected_binary_array = Array.new(8) { rand(0..1) }
+    decimal = rand(0..256)
+    expected_binary_array = decimal.to_s(2).split("").map { |num| num.to_i }
     # binary_array = Array.new(8) { rand(0..1) }
     # expected_decimal = binary_array.join.to_s.to_i(2)
 
